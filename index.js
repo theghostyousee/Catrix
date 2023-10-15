@@ -81,8 +81,9 @@ document.getElementById("tweet").addEventListener('click',clickonbody)
 function clickonbody() {
     var text = "My data have been leaked by @ComputerLeaks.%0a%0a"
     var symbol = "−·−· ·− −· − −−−  − ·· − ·− −· −−− %0a%0a"
-    var hash = "0x" + generateMixed(15);
-    window.location.href = "https://twitter.com/intent/tweet?&text=\n" + text +symbol  + hash
+    var hash = "0x" + generateMixed(15) + "%0a%0a";
+    var telegram = "https://t.me/ComputerLeaks"
+    window.location.href = "https://twitter.com/intent/tweet?&text=\n" + text +symbol  + hash + telegram
 }
 
 window.onload = function() {
