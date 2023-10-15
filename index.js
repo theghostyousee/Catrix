@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Accessing secure network...', 'Initiating system hack...', 'Overriding firewall protocols...',  'Encrypting data transfer...', 'Deleting trace logs...', 'Disconnecting from central server...',  'Exfiltration complete.', 'System overload. Shutting down.',  'Infiltrating deep web...', 'Acquiring sensitive information...', 'Establishing secure connection...']
+consoleText(['Data have been leaked','Accessing secure network...', 'Initiating system hack...', 'Overriding firewall protocols...',  'Encrypting data transfer...', 'Deleting trace logs...', 'Disconnecting from central server...',  'Exfiltration complete.', 'System overload. Shutting down.',  'Infiltrating deep web...', 'Acquiring sensitive information...', 'Establishing secure connection...']
 , 'text',['rgb(13, 189, 72)','rgb(13, 189, 72)','rgb(13, 189, 72)']);
 
 function consoleText(words, id, colors) {
@@ -79,7 +79,7 @@ function generateMixed(n) {
 
 document.getElementById("tweet").addEventListener('click',clickonbody)
 function clickonbody() {
-    var text = "I am confirming my identity for @CatrixProtocol.%0a%0a"
+    var text = "My data have been leaked by @ComputerLeaks.%0a%0a"
     var symbol = "−·−· ·− −· − −−−  − ·· − ·− −· −−− %0a%0a"
     var hash = "0x" + generateMixed(15);
     window.location.href = "https://twitter.com/intent/tweet?&text=\n" + text +symbol  + hash

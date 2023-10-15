@@ -45,7 +45,6 @@ body {
 
   left: 50%;
   top: 50%;
-  margin:0px;
   transform: translate(-50%, -50%)
 }
 .console-underscore {
@@ -80,6 +79,7 @@ body {
 
     text-align:center;
     height: 100%;
+    margin-top: 40px;
     width: 100%;
     display:flex;
     align-items: center;
