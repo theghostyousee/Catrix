@@ -1,31 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./dollars.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./dollars.jpg" />
     <title>COMPUTER LEAKS</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="console"></div>
 
-    <div class='console-container'>
-        <span id='text'></span>
-        <div class='console-underscore' id='console'>&#95;</div>
+    <div class="console-container">
+      <!-- <span id='text'></span>
+        <div class='console-underscore' id='console'>&#95;</div> -->
+      <div id="timer"></div>
+      <br />
+      <br />
     </div>
-    
+
+    <br />
     <div class="button-container">
-
-        <button id="tweet">RECOVER DATA</button>
-
+      <button id="tweet">LEAK THE CONTRACT</button>
+      <div class="socials">
+        <button id="telegram">TELEGRAM</button> <button id="twitter">TWITTER</button>
+      </div>
     </div>
-    
 
+    <script>
+      var x = [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "0",
+        "1",
+        "2",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+      ];
 
+      function generateMixed(n) {
+        let res = "";
+        for (let i = 0; i < n; i++) {
+          let id = Math.ceil(Math.random() * 80);
+          res += x[id];
+        }
+        return res;
+      }
+
+      document
+        .getElementById("telegram")
+        .addEventListener("click", function () {
+          window.location.href = "https://t.me/ComputerLeaks ";
+        });
+
+      document
+        .getElementById("twitter")
+        .addEventListener("click", function () {
+          window.location.href = "https://twitter.com/ComputerLeaks";
+        });
+
+      document.getElementById("tweet").addEventListener("click", clickonbody);
+
+      function clickonbody() {
+        var text = "💿I've leaked @ComputerLeaks contract%0a%0a";
+        var symbol = "0x %0a%0a";
+        var hash = "Launching the 19th October at 3pm EST." + "%0a%0a";
+        var telegram = "https://t.me/ComputerLeaks";
+        window.location.href =
+          "https://twitter.com/intent/tweet?&text=\n" +
+          text +
+          symbol +
+          hash +
+          telegram;
+      }
+    </script>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

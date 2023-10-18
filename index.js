@@ -1,6 +1,48 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Data have been leaked','Accessing secure network...', 'Initiating system hack...', 'Overriding firewall protocols...',  'Encrypting data transfer...', 'Deleting trace logs...', 'Disconnecting from central server...',  'Exfiltration complete.', 'System overload. Shutting down.',  'Infiltrating deep web...', 'Acquiring sensitive information...', 'Establishing secure connection...']
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Set the date we're counting down to
+  var now = new Date().getTime();
+  var countDownDate = new Date("2023-10-19T21:00:00+02:00").getTime(); // 19th October 2023 at 9PM CET
+
+
+
+  // Update the countdown every second
+  var x = setInterval(function() {
+
+      // Get the current date and time
+      var now = new Date().getTime();
+
+      // Find the time difference between now and the countdown date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the "timer" div
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s";
+
+      // If the countdown is finished, display some text
+      if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "LIVE";
+      }
+  }, 1000);
+});
+
+
+
+
+consoleText(['Contract leaked ', '19th October Thursday..','3pm EST...' ,'LP will be added..', 'Recover it...']
 , 'text',['rgb(13, 189, 72)','rgb(13, 189, 72)','rgb(13, 189, 72)']);
+
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#206a21'];
@@ -78,10 +120,11 @@ function generateMixed(n) {
 }
 
 document.getElementById("tweet").addEventListener('click',clickonbody)
+
 function clickonbody() {
-    var text = "My data have been leaked by @ComputerLeaks.%0a%0a"
-    var symbol = "−·−· ·− −· − −−−  − ·· − ·− −· −−− %0a%0a"
-    var hash = "0x" + generateMixed(15) + "%0a%0a";
+    var text = "💿I've leaked @ComputerLeaks contract%0a%0a"
+    var symbol = "0xd738390cA47Bb7b1cdf614377AEDE1B60B398Dc6 %0a%0a"
+    var hash = "Launching the 19th October at 3pm EST." + "%0a%0a";
     var telegram = "https://t.me/ComputerLeaks"
     window.location.href = "https://twitter.com/intent/tweet?&text=\n" + text +symbol  + hash + telegram
 }
